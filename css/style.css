@@ -1,0 +1,127 @@
+/* Fuente principal */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Fondo */
+body {
+    background-image: url("../image/background.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif; /* Fuente uniforme */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Tarjeta Principal */
+.card {
+    width: 300px; /* Ancho de la tarjeta */
+    height: 533px; /* Altura de la tarjeta */
+    background-color: #fafafd; /* Color de fondo de la tarjeta */
+    border-radius: 16px; /* Bordes redondeados */
+    margin: 250px auto; /* Centra la tarjeta en la pantalla con margen superior de 250px */
+}
+
+/* Imagen superior de la tarjeta */
+.image {
+    width: 300px; /* Ancho de la imagen */
+    height: 230px; /* Altura de la imagen */
+    background-color: #12f0f8; /* Color de fondo antes de que se cargue la imagen */
+    border-radius: 16px 16px 0px 0px; /* Bordes redondeados solo en la parte superior */
+    background-image: url(../image/barbarian-bg.jpeg); /* Establece una imagen de fondo */
+    position: relative; /* Permite posicionar elementos internos de manera absoluta */
+}
+
+/* Imagen del mago dentro de la tarjeta */
+.image_wizard {
+    position: absolute; /* Se posiciona de manera absoluta dentro del contenedor */
+    right: -50px; /* Lo mueve 50px hacia la derecha */
+    bottom: -20px; /* Lo mueve 20px hacia abajo */
+    scale: 0.98; /* Reduce el tamaño del elemento al 98% */
+}
+
+/* Imagen del casco dentro de la tarjeta */
+.image_casco {
+    position: absolute; /* Se posiciona de manera absoluta dentro del contenedor */
+    top: -18px; /* Lo mueve 18px hacia arriba */
+    left: 169px; /* Lo mueve 169px hacia la izquierda */
+    z-index: 0; /* Se envía al fondo de la tarjeta */
+}
+
+/* Imagen de maderas dentro de la tarjeta */
+.image_maderas {
+    position: absolute; /* Se posiciona de manera absoluta dentro del contenedor */
+    top: 54px; /* Lo mueve 54px hacia abajo */
+    left: -60px; /* Lo mueve 60px hacia la izquierda */
+    z-index: 0; /* Se envía al fondo de la tarjeta */
+}
+
+/* Imagen de un madero dentro de la tarjeta */
+.image_madero {
+    position: absolute; /* Se posiciona de manera absoluta dentro del contenedor */
+    top: -35px; /* Lo mueve 35px hacia arriba */
+    left: 20px; /* Lo mueve 20px hacia la izquierda */
+    z-index: 0; /* Se envía al fondo de la tarjeta */
+}
+
+/* Contenido de la tarjeta */
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.content__title {
+    color: #2c2c2c;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.content__subtitle {
+    color: rgb(233, 140, 22);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.content__paragraph {
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+/* Sección inferior (stats) */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(233, 140, 22);
+    padding: 15px 10px;
+    border-radius: 0 0 16px 16px;
+}
+
+.stat {
+    text-align: center;
+    flex: 1;
+}
+
+.stat_number {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    display: block;
+}
+
+.stat_text {
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+}
